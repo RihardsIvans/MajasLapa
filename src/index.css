@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes pulseSlow {
+  0% { transform: scale(1); opacity: 0.25; }
+  50% { transform: scale(1.3); opacity: 0.35; }
+  100% { transform: scale(1); opacity: 0.25; }
+}
+
+@keyframes pulseSlower {
+  0% { transform: scale(1); opacity: 0.25; }
+  50% { transform: scale(1.4); opacity: 0.35; }
+  100% { transform: scale(1); opacity: 0.25; }
+}
+
+.animate-pulse-slow {
+  animation: pulseSlow 10s ease-in-out infinite;
+}
+
+.animate-pulse-slower {
+  animation: pulseSlower 14s ease-in-out infinite;
+}
+
+@keyframes cardGlow {
+  0% { box-shadow: 0 0 10px rgba(59,130,246,0.2); }
+  50% { box-shadow: 0 0 25px rgba(59,130,246,0.6); }
+  100% { box-shadow: 0 0 10px rgba(59,130,246,0.2); }
+}
+
+.animate-card-glow {
+  animation: cardGlow 6s ease-in-out infinite;
+}
